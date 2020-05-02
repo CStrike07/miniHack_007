@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,4 +73,80 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="faq.css">
+    <title>FAQ</title>
+</head>
+<body>
+  <button class="button" onclick="myFunction()">Switch to dark mode</button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+  <section class="header">
+  <h2>Some Of The Frequently Asked Questions</h2>
+</section>
+<button type="button" class="collapsible">What Is the Best Way to Lose Fat?</button>
+<div class="content">
+  <p>The simple (and complex) answer is that there is no “best way” to lose fat. Each person will respond differently to a training program. However, there are some principles you can apply when designing your programs.
+    It is often assumed that low-intensity exercise is best for burning fat. During exercise at a very low intensity, fat does account for most of the energy expenditure, while at a moderate intensity, fat accounts for only about 50 percent of the energy used. However, since the number of calories used per minute is much greater at a moderate to high intensity than at a low intensity, the total number of calories expended during a moderate- to high-intensity workout is greater than it is during a low- intensity workout of the same duration; consequently, the total number of fat calories expended is also greater during the higher-intensity workout. 
+  </p>
+</div>
+<button type="button" class="collapsible">If I Lift Weights,
+  Will I Get Bigger Muscles?</button>
+<div class="content">
+  <p>Whether or not you will get bigger muscles (hypertrophy) depends on three basic factors: genetics, gender and training intensity. Genetics is mostly manifested as muscle fiber type; people with predominantly fast-twitch fibers acquire larger muscles more easily than people with predominantly slow-twitch fibers. In relation to gender, males acquire larger muscles than females do, because males have greater amounts of testosterone and other sex hormones that influence protein metabolism (Tipton 2001). Thus, females experience less muscle hypertrophy with strength improvement than males do (Lewis et al. 1986). Training intensity is the only factor you can control.</p>
+</div>
+<button type="button" class="collapsible"> Should I Do Cardio First
+  or Weight Training First?</button>
+<div class="content">
+  <p>If the primary goal is to increase aerobic endurance or lose weight, then the client should perform cardiovascular exercise first. If the primary goal is to increase muscular strength, then the person should perform strength training first. Basically, in order to get the most out of the workout, the person should perform the most important type of exercise when he or she is not fatigued. Because many person want to lose weight and increase muscular strength, alternating the order of the workout during different cycles of training is one way to satisfy both goals.</p>
+</div>
+<button type="button" class="collapsible">Do I Need to Take
+  Dietary Supplements?</button>
+<div class="content">
+  <p>For those who eat a balanced diet, there is no evidence that muscle-building supplements, including protein powders and amino acids, build muscle mass (Clarkson 1998; Eichner et al. 1999). The few supplements whose muscle-building potential is supported by research (e.g., creatine) are effective mostly in elite athletes who have undergone many years of training (Eichner et al. 1999).</p>
+</div>
+<button type="button" class="collapsible">Why Are My Muscles
+  Sore After a Workout?</button>
+<div class="content">
+  <p>Soreness results from high force production when an exercise is new or a load is greater than normal. Furthermore, eccentric muscle contractions (in which the muscle lengthens, as when lowering a weight) cause more soreness in the days following the workout than either isometric contractions (in which the muscle does not change length, as when holding a weight) or concentric contractions (in which the muscle shortens, as when lifting a weight). This soreness in the days after exertion is called delayed onset muscle soreness (DOMS) (Armstrong 1984; Clarkson & Sayers 1999). Although many people think that lactic acid is the cause of muscle soreness, the fact is that lactic acid (lactate) is removed from the muscles within 30 to 60 minutes after exercise, so it is long gone by the time soreness develops. Muscle soreness results from an immediate mechanical injury and a biochemical injury occurring a few days after the workout.</p>
+</div>
+<button type="button" class="collapsible">How Often Should I Work Out/Lift Weights?</button>
+<div class="content">
+  <p>According to the American College of Sports Medicine (ACSM), one should exercise 20 to 60 minutes, three to five days a week for health/fitness promotion. Exercising only three days a week may be enough for previously sedentary person to improve their fitness, but it will take more exercise to see further improvements. Improvements in aerobic power (VO2 max), cholesterol levels, body composition and cardiovascular health are all augmented the more often you exercise (Duncan et al. 1991; Gettman et al. 1976; Milesis et al. 1976). However, it is important that your clients do not progress too soon or exercise excessively, since both these behaviors can lead to overuse injuries.</p>
+</div>
+<button type="button" class="collapsible">My question is not listed here?</button>
+<div class="content">
+  <p>If u still have any question fell free to contact us, you can email any one of us
+    <address>
+      <a href="mailto:chirag.suman2025@gmail.com">Chirag Sinha</a>
+    </address>
+  </p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+>>>>>>> 728b1d4d5192423dc12c487a12fb1304e17fb7cb
 </html>
