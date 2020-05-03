@@ -1,0 +1,16 @@
+.jumbotron
+{
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+    background: rgb(45, 243, 61);
+    color:rgb(0, 0, 0);
+
+}
+.rest
+{
+    background: rgb(45, 243, 61);  
+}
+body
+{
+    background-color: black;
+}

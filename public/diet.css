@@ -1,54 +1,105 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'serif', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f8f3eb;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
-.banners
-{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    padding: 50px;
-    background-image:  linear-gradient(rgba(0,196,0,.1), rgba(255,235,245,.9)),url(bgfood.jpg);
-    background-size: cover;
+.dark-mode *{
+  background-color: black;
+  color: white;
 }
-.banners h2
-{
-    color: #fff;
-    font-size: 70px;
-    text-transform: uppercase;
-    text-align: left;
-    line-height: 1em;
-    margin-bottom: 10px;
+.container-fluid {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
 }
-p
-{
-    position: relative;
-    font-size: 18px;
-    font-weight:300;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    padding: 20px;
+.fitlogo {
+  text-transform: uppercase;
 }
-h3
-{
-    position: relative;
-    margin-bottom: 10px;
-    padding-top: 20px;
-    padding-left: 20px;
+.navspan {
+  color: black;
 }
-div.transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.6;
-  }
-  
-  div.transbox h3 p {
-    margin: 5%;
-    font-weight: bold;
-    color: #000000;
-  }
+.navspan:hover {
+  color: #85a392;
+}
+.logospan {
+  color: #00bcd4;
+}
+.bg-primary {
+  background-color: #f8f3eb !important;
+}
+.banners {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  /* background-image: linear-gradient(
+      rgba(0, 196, 0, 0.1),
+      rgba(255, 235, 245, 0.9)
+    ),
+    url(bgfood.jpg);
+  background-size: cover; */
+}
+.bannrs p {
+  text-align: center;
+  align-items: center;
+}
+.banners h2 {
+  color: #000;
+  font-size: 70px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 10px;
+}
+p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+h3 {
+  position: relative;
+  margin-bottom: 10px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+/* div.transbox {
+  margin: 30px;
+  background-color: #f8f3eb;
+  border: 1px solid black;
+  opacity: 0.6;
+} */
 
+div.transbox h3 p {
+  margin: 2%;
+  font-weight: bold;
+  color: #000000;
+}
+.middleh3 {
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0 30px 0;
+  text-decoration: underline black;
+  margin: 10px 0 30px 0 !important;
+}
+.vitsimg {
+  width: 55%;
+  margin: 0 0 0 75px;
+}
+.riceimg {
+  width: 55%;
+  margin: 0 0 0 75px;
+}
+.eggimg {
+  width: 55%;
+  margin: 0 0 0 75px;
+}
+.fatsimg {
+  width: 55%;
+  margin: 0 0 0 75px;
+}

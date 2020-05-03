@@ -1,79 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>diet</title>
-    <link rel="stylesheet" href="diet.css">
-</head>
-<body>
-    <section class="banners" id="diet">
-      <h2>Diet Plan</h2>
-      <div class="transbox">
-        <h3>Protein Consumption:</h3>
-        <p>We Indians often believe that high-protein diets are dangerous to kidney and overall health. And due to which quite frequently we completely overlook the importance of dietary protein in our dishes. A study conducted with an explicit aim to find a relation between protein intake and kidney function found that healthy individuals (with no pre-existing renal disease) showed no signs of harm in renal function upon consuming over 2.0 grams of protein per kg of bodyweight.</p>
-        <h3>Carbs Consumption:</h3>
-        <p>You may have always wondered how many carbs I should really take to build muscles. Well, that’s quite easy to determine.
-            Fact – 1 gram of carbohydrate contains four calories. Now assume that you probably need around 3000 calories per day to get bigger.
-            If we go by the recommendations, your daily calorie intake should comprise of 45%-55% of calories from carbs. Calculating by simple math, we get 375 grams of carbs every day.
-            
-            However, everyone has different calorie intake (hence different carb intake ratio) based on their goals, fitness level, and metabolic rate.</p>
-        <h3>Fats Consumption:</h3>
-        <p>Like carbs, fats also makes you feel full after a meal. Eating unprocessed fats found in nuts, olives, and avocados should be highly preferred over processed fat and oil products. At least 10%-20% of your total calories should come from healthy fats like polyunsaturated and monounsaturated fats along with saturated fat found in egg yolks, cheese, and other poultry items.</p>
-        <h3>Vitamin And Fibre Consumption:</h3>
-        <p>Stop me if it sounds wrong, vitamins are so underrated in every bodybuilder’s diet. All you think about is protein and more protein which eventually leads to the negligence of micronutrient, especially vitamins. But now you will have to take some time and plan your micro nutrients now before it gets too late.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diet Plan</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="diet.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-primary">
+        <a class="fitlogo navbar-brand" href="/"
+          ><span class="logospan">Fit</span><span class="navspan">ness Freak</span></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navcl collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto p-3">
+            <li class="nav-item">
+              <a class="nav-link" href="/exercise">
+    <span class="navspan" style="color: lightseagreen;">30 Days Challenge</span></a>
+            </li>
+  
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+  <span class="navspan" style="color: lightseagreen;">Advanced fitness channels</span>
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a
+                  class="dropdown-item"
+                  href="https://www.youtube.com/user/KozakSportsPerform"
+                  >HASfit</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://www.youtube.com/channel/UCn8Fiasqd-6G3A6AS322mZA"
+                  >FitMuscle TV</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="https://www.youtube.com/user/BeFit"
+                  >BeFiT</a
+                >
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/faq"><span class="navspan" style="color: lightseagreen;">FAQ</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <button class="button" onclick="myFunction()"><span>Dark mode</span></button>
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+      <section class="banners" id="diet">
+        <h2 style="color: lightseagreen;">Diet Plan</h2>
+        <div class="transbox">
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h3>Protein Consumption:</h3>
+              <p>
+                We Indians often believe that high-protein diets are dangerous
+                to kidney and overall health. And due to which quite frequently
+                we completely overlook the importance of dietary protein in our
+                dishes. A study conducted with an explicit aim to find a
+                relation between protein intake and kidney function found that
+                healthy individuals (with no pre-existing renal disease) showed
+                no signs of harm in renal function upon consuming over 2.0 grams
+                of protein per kg of bodyweight.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <img class="eggimg" src="egg.png" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h3>Carbs Consumption:</h3>
+              <p>
+                You may have always wondered how many carbs I should really take
+                to build muscles. Well, that’s quite easy to determine. Fact – 1
+                gram of carbohydrate contains four calories. Now assume that you
+                probably need around 3000 calories per day to get bigger. If we
+                go by the recommendations, your daily calorie intake should
+                comprise of 45%-55% of calories from carbs. Calculating by
+                simple math, we get 375 grams of carbs every day. However,
+                everyone has different calorie intake (hence different carb
+                intake ratio) based on their goals, fitness level, and metabolic
+                rate.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <img class="riceimg" src="rice.png" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h3>Fats Consumption:</h3>
+              <p>
+                Like carbs, fats also makes you feel full after a meal. Eating
+                unprocessed fats found in nuts, olives, and avocados should be
+                highly preferred over processed fat and oil products. At least
+                10%-20% of your total calories should come from healthy fats
+                like polyunsaturated and monounsaturated fats along with
+                saturated fat found in egg yolks, cheese, and other poultry
+                items.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <img class="fatsimg" src="fats.png" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-12">
+              <h3>Vitamin And Fibre Consumption:</h3>
+              <p>
+                Stop me if it sounds wrong, vitamins are so underrated in every
+                bodybuilder’s diet. All you think about is protein and more
+                protein which eventually leads to the negligence of
+                micronutrient, especially vitamins. But now you will have to
+                take some time and plan your micro nutrients now before it gets
+                too late. One of the very vital vitamins that every Indian
+                bodybuilder and athlete should get is Vitamin D. It is helpful
+                in strengthening bone, brain health, protein synthesis, and
+                hormone synthesis. Other important vitamins that no bodybuilder
+                should ignore are Vitamins B, C, and E.
+              </p>
+            </div>
+            <div class="col-lg-6 col-12">
+              <img class="vitsimg" src="vits.png" alt="" />
+            </div>
+          </div>
 
-            One of the very vital vitamins that every Indian bodybuilder and athlete should get is Vitamin D. It is helpful in strengthening bone, brain health, protein synthesis, and hormone synthesis. Other important vitamins that no bodybuilder should ignore are Vitamins B, C, and E.</p>
-       <h3>Now Lets Talk About The Daily Meal Plan</h3>
-       <h3>Meal 1: Wake-Up Meal/Pre-Breakfast</h3>
-       <p><strong>Nutrient Groups:</strong> Fast Protein + High GI Fruits<br><br>
-       <strong>What to Eat:</strong><br><br>
-       <strong>Vegetarians:</strong> Whey Protein Shake and One medium to large size piece of fruit (preferably bananas or grapes<br>
-        <strong>Non-Vegetarians:</strong> Whey Protein Shake and One medium to large size piece of fruit (preferably bananas or grapes)
-    <br><strong>Calories:</strong> 240, Fat: 6g, Carbs: 45g, Fiber: 11g, Protein: 5g</p>
-        <h3>Meal 2: Breakfast</h3>
-       <p><strong>Nutrient Groups:</strong> Protein + Low GI carbs or Slow Digesting Carbs + Healthy Fats<br><br>
-       <strong>What to Eat:</strong><br><br>
-       <strong>Vegetarians:</strong> Paneer Parantha (3 medium pieces)/Paneer Bhurji + Greek Yogurt/ Low-fat yogurt + sprout salad (1 medium bowl)<br>
-        <strong>Non-Vegetarians:</strong> Eggs, Oatmeal, Milk, and Nuts
-        <br><strong>Calories:</strong> 441, Fat: 21g, Carbs: 55g, Fiber: 17g, Protein: 14g</p> 
-        <h3>Meal 3: Mid-Morning Meal/Snacks</h3>
-        <p><strong>Nutrient Groups:</strong> Protein + Slow acting carbs + Veggies<br><br>
-        <strong>What to Eat:</strong><br><br>
-        <strong>Vegetarians:</strong> Roasted chickpeas (1 medium bowl) + Small size fruit (1 medium size) + mixed vegetables salad<br>
-         <strong>Non-Vegetarians:</strong> Brown Rice, Chicken, and Broccoli
-         <br><strong>Calories:</strong> 240, Fat: 6g, Carbs: 45g, Fiber: 11g, Protein: 5g</p>
-         <h3>Meal 4: Lunch</h3>
-         <p><strong>Nutrient Groups:</strong> Protein + Slow acting carbs + Veggies<br><br>
-         <strong>What to Eat:</strong><br><br>
-         <strong>Vegetarians:</strong> Mixed bean sabzi + Brown Rice (1 medium cup) + Broccoli/Cauliflower (1 cup cooked)<br>
-          <strong>Non-Vegetarians:</strong> Fish, Brown Rice, Mixed Veggies
-          <br><strong>Calories:</strong>  587, Fat: 16.5g, Carbs: 64g, Fiber: 14g, Protein: 48g</p>
+          <h3 class="middleh3">Now Lets Talk About The Daily Meal Plan</h3>
+          <h3>Meal 1: Wake-Up Meal/Pre-Breakfast</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Fast Protein + High GI Fruits<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Whey Protein Shake and One medium to
+            large size piece of fruit (preferably bananas or grapes<br />
+            <strong>Non-Vegetarians:</strong> Whey Protein Shake and One medium
+            to large size piece of fruit (preferably bananas or grapes)
+            <br /><strong>Calories:</strong>
+            240, Fat: 6g, Carbs: 45g, Fiber: 11g, Protein: 5g
+          </p>
+          <h3>Meal 2: Breakfast</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Protein + Low GI carbs or Slow
+            Digesting Carbs + Healthy Fats<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Paneer Parantha (3 medium
+            pieces)/Paneer Bhurji + Greek Yogurt/ Low-fat yogurt + sprout salad
+            (1 medium bowl)<br />
+            <strong>Non-Vegetarians:</strong> Eggs, Oatmeal, Milk, and Nuts
+            <br /><strong>Calories:</strong> 441, Fat: 21g, Carbs: 55g, Fiber:
+            17g, Protein: 14g
+          </p>
+          <h3>Meal 3: Mid-Morning Meal/Snacks</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Protein + Slow acting carbs +
+            Veggies<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Roasted chickpeas (1 medium bowl) +
+            Small size fruit (1 medium size) + mixed vegetables salad<br />
+            <strong>Non-Vegetarians:</strong> Brown Rice, Chicken, and Broccoli
+            <br /><strong>Calories:</strong> 240, Fat: 6g, Carbs: 45g, Fiber:
+            11g, Protein: 5g
+          </p>
+          <h3>Meal 4: Lunch</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Protein + Slow acting carbs +
+            Veggies<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Mixed bean sabzi + Brown Rice (1
+            medium cup) + Broccoli/Cauliflower (1 cup cooked)<br />
+            <strong>Non-Vegetarians:</strong> Fish, Brown Rice, Mixed Veggies
+            <br /><strong>Calories:</strong> 587, Fat: 16.5g, Carbs: 64g, Fiber:
+            14g, Protein: 48g
+          </p>
           <h3>Meal 5: Mid-Afternoon/Pre-Workout Meal</h3>
-          <p><strong>Nutrient Groups:</strong> Protein + Low GI carbs<br><br>
-          <strong>What to Eat:</strong><br><br>
-          <strong>Vegetarians:</strong> Whole grain toast (spread almond butter or avocado) + Baked sweet potatoes (1 small bowl)<br>
-           <strong>Non-Vegetarians:</strong> Sweet potato and Protein powder
-           <br><strong>Calories:</strong> 190, Fat: 13g, Carbs: 25g, Fiber: 3g, Protein: 4g</p>
-           <h3>Meal 6: Post-Workout Shake</h3>
-           <p><strong>Nutrient Groups:</strong> Fast Protein + Fast Carbs/High GI Carbs<br><br>
-           <strong>What to Eat:</strong><br><br>
-           <strong>Vegetarians:</strong> Whey protein shake and Dextrose Monohydrate<br>
-        <strong>Non-Vegetarians:</strong> Whey protein shake and Dextrose Monohydrate
-        <br><strong>Calories:</strong> 190, Fat: 13g, Carbs: 25g, Fiber: 3g, Protein: 4g</p>
-        <h3>Meal 7: Dinner</h3>
-           <p><strong>Nutrient Groups:</strong> Protein + Fibres + Few Low GI carbs<br><br>
-           <strong>What to Eat:</strong><br><br>
-           <strong>Vegetarians:</strong>  Avocado and White Bean Salad with cheese dressing<br>
-        <strong>Non-Vegetarians:</strong> Chicken, Broccoli salad with flax oil dressing
-        <br><strong>Calories:</strong> 415, Fat: 13g, Carbs: 24g, Fiber: 5g, Protein: 44g</p>
-        <h3>Meal 8: Bedtime Meal</h3>
-           <p><strong>Nutrient Groups:</strong> Slow acting protein + healthy fats<br><br>
-           <strong>What to Eat:</strong><br><br>
-           <strong>Vegetarians:</strong>  Whey protein with cottage cheese or casein protein + ½ spoon peanut butter<br>
-        <strong>Non-Vegetarians:</strong> Whey protein with cottage cheese or casein protein + ½ spoon peanut butter
-        <br><strong>Calories:</strong> 190, Fat: 13g, Carbs: 25g, Fiber: 3g, Protein: 4g</p>    
+          <p>
+            <strong>Nutrient Groups:</strong> Protein + Low GI carbs<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Whole grain toast (spread almond
+            butter or avocado) + Baked sweet potatoes (1 small bowl)<br />
+            <strong>Non-Vegetarians:</strong> Sweet potato and Protein powder
+            <br /><strong>Calories:</strong> 190, Fat: 13g, Carbs: 25g, Fiber:
+            3g, Protein: 4g
+          </p>
+          <h3>Meal 6: Post-Workout Shake</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Fast Protein + Fast Carbs/High GI
+            Carbs<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Whey protein shake and Dextrose
+            Monohydrate<br />
+            <strong>Non-Vegetarians:</strong> Whey protein shake and Dextrose
+            Monohydrate <br /><strong>Calories:</strong> 190, Fat: 13g, Carbs:
+            25g, Fiber: 3g, Protein: 4g
+          </p>
+          <h3>Meal 7: Dinner</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Protein + Fibres + Few Low GI
+            carbs<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Avocado and White Bean Salad with
+            cheese dressing<br />
+            <strong>Non-Vegetarians:</strong> Chicken, Broccoli salad with flax
+            oil dressing <br /><strong>Calories:</strong> 415, Fat: 13g, Carbs:
+            24g, Fiber: 5g, Protein: 44g
+          </p>
+          <h3>Meal 8: Bedtime Meal</h3>
+          <p>
+            <strong>Nutrient Groups:</strong> Slow acting protein + healthy
+            fats<br /><br />
+            <strong>What to Eat:</strong><br /><br />
+            <strong>Vegetarians:</strong> Whey protein with cottage cheese or
+            casein protein + ½ spoon peanut butter<br />
+            <strong>Non-Vegetarians:</strong> Whey protein with cottage cheese
+            or casein protein + ½ spoon peanut butter <br /><strong
+              >Calories:</strong
+            >
+            190, Fat: 13g, Carbs: 25g, Fiber: 3g, Protein: 4g
+          </p>
+        </div>
+      </section>
     </div>
-    </section>
-</body>
+    <div>
+        <div class="card">
+          <div class="card-header">
+            Featured
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Tools</h5>
+            <ul type="square">
+            <li><p class="card-text">BMI Calculator - Calculate your Body Mass index</p></li>
+            <a class="btn btn-primary ml-3" href="https://www.webmd.com/diet/body-bmi-calculator" data-metrics-link="3">BMI</a>
+            <li>
+              <p class="card-text">DIET & WEIGHT MANAGEMENT - Food Calculator</p>
+            </li>
+            <a class="btn btn-primary ml-3" href="https://www.webmd.com/diet/healthtool-food-calorie-counter" data-metrics-link="3">Food Calculator</a>
+            </ul>
+          </div>
+      </div>
+
+
+      
+     
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

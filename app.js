@@ -12,6 +12,9 @@ app.get("/diet", function(req,res){
 app.get("/faq", function(req,res){
     res.render("faq");
 });
+app.get("/exercise", function(req,res){
+    res.render("exercise");
+});
 app.listen(port, function() {
     console.log('Our app is running on http://localhost:' + port);
 });
